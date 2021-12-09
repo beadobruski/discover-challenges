@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #eaeaea;
+  --receita-background: #fff;
+  --titles: #1b1b1b;
+  --footer: #8f8f8f;
+  --another-texts: #39393a;
+}
+
+body {
+  background: var(--background);
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+main section {
+  text-align: center;
+}
+
+.container {
+  background: var(--receita-background);
+  width: 50rem;
+  height: auto;
+
+  margin: 2rem auto;
+  border-radius: 1rem;
+  padding: 3rem 1.4rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--titles);
+  font-size: 1, 75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--titles);
+  text-transform: uppercase;
+  margin: 2rem 0;
+  font-size: 1.25rem;
+}
+
+.container li {
+  text-align: start;
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+}
+
+footer,
+figcaption {
+  font-size: 0.75rem;
+  color: var(--footer);
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
