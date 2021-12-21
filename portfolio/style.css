@@ -105,6 +105,40 @@ small {
   height: 1.5rem;
 }
 
+/* ======= Tech's ======== */
+
+.techs .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.techs h2 {
+  margin-bottom: 1.25rem;
+}
+
+.techs .tech-btn {
+  width: 5.375rem;
+  height: 1.5rem;
+  text-align: center;
+  width: 5.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 0.4rem;
+  margin-left: 0.5rem;
+  background: var(--bg-techs);
+
+  color: black;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  padding: 0.1rem 1.8rem;
+  border-radius: 1.875rem;
+}
+
 /* ======= Experiences ======== */
 .experiences .glossary {
   font-size: 0.75rem;
