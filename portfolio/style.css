@@ -34,7 +34,8 @@ img {
 
 h2,
 h3,
-p {
+p,
+small {
   color: var(--text-color);
 }
 
@@ -51,6 +52,8 @@ p {
   grid-template-columns: 1fr 4fr;
   gap: 3.75rem;
   padding: 2.5rem;
+
+  height: 100vh;
 }
 
 /* ======= Aside Settings ======== */
@@ -102,6 +105,39 @@ p {
   height: 1.5rem;
 }
 
+/* ======= Experiences ======== */
+.experiences .glossary {
+  font-size: 0.75rem;
+}
+
+.experiences .glossary dl {
+  padding-left: 1.5rem;
+  color: var(--text-color);
+  margin-top: 1.25rem;
+}
+
+.experiences .glossary strong {
+  margin-left: 0.3rem;
+}
+
+/* ======= education ======== */
+.education .glossary {
+  font-size: 0.75rem;
+}
+
+.education .glossary dl {
+  padding-left: 1.5rem;
+  color: var(--text-color);
+  margin-top: 1.25rem;
+}
+
+.education .glossary strong {
+  margin-left: 0.3rem;
+}
+/*  */
+
+/* ======= Main Section Settings ======== */
+
 /* ======= Projects ======== */
 
 .projects {
@@ -121,6 +157,11 @@ p {
 }
 
 /* ======= Specificities ======== */
+
+.folders .card {
+  width: 100%;
+  height: 11.625rem;
+}
 
 .folders .cards {
   display: flex;
@@ -172,6 +213,47 @@ p {
 .folders .folder-icon {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+/* ======= Ask ======== */
+
+.asks {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.asks .image {
+  margin-bottom: 1.875rem;
+}
+
+.asks .image img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.asks .text h2 {
+  font-size: 1.125rem;
+  margin-bottom: 0.4rem;
+}
+
+.asks .text small {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-bottom: 1.75rem;
+}
+
+.asks .text p {
+  margin-bottom: 0.69rem;
+}
+
+.asks .tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.asks .tags p {
+  font-size: 0.875rem;
 }
 
 /* ======= Footer ======== */
