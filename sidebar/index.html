@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/sidebar/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <title>SideBar - Challenge</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <nav>
+        <header>
+          <div class="logo-content">
+            <div class="logo">
+              <img src="/sidebar/images/logo.svg" alt="Logo da PetVet" />
+            </div>
+
+            <div class="toggle-menu">
+              <a class="toggle" href="#"><img src="/sidebar/images/menu.svg" alt="" /></a>
+            </div>
+          </div>
+        </header>
+        <form action="">
+          <div class="search">
+            <label class="sr-only" for="search">Buscar</label>
+
+            <input type="text" name="search" id="search" placeholder="Buscar" />
+            <img src="/sidebar/images/search.svg" alt="Icon de buscar" />
+          </div>
+        </form>
+
+        <div class="itens">
+          <ul>
+            <li>
+              <dfn title="Dashboard"><img src="/sidebar/images/grid.svg" alt="Icon da Dashboard" /></dfn>
+              <a href="#">Dashboard</a>
+            </li>
+
+            <li>
+              <dfn title="Pets"><img src="/sidebar/images/pet.svg" alt="Icon de Pets" /></dfn>
+              <a href="#">Pets</a>
+            </li>
+            <li>
+              <dfn title="Clientes"><img src="/sidebar/images/user.svg" alt="Icon dos Clientes" /></dfn>
+              <a href="#">Clientes</a>
+            </li>
+            <li>
+              <dfn title="Vets"><img src="/sidebar/images/vet.svg" alt="Icon dos Vets" /></dfn>
+              <a href="#">Vets</a>
+            </li>
+            <li>
+              <dfn title="Ajustes"><img src="/sidebar/images/settings.svg" alt="Icon dos Ajustes" /></dfn>
+              <a href="#">Ajustes</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="content-box">
+        <div class="person">
+          <img class="avatar-img" src="/sidebar/images/photo.jpg" alt="Foto de Avatar" />
+
+          <div class="text">
+            <p>Eleanor Pena</p>
+            <small>Veterinária</small>
+          </div>
+        </div>
+
+        <div class="log-out">
+          <a href="#"><img src="/sidebar/images/log-out.svg" alt="Botão de deslogar" /></a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h2>Dashboard</h2>
+    </main>
+
+    <!-- Script -->
+    <script src="/sidebar/main.js"></script>
+  </body>
+</html>

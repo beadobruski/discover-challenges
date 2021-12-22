@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+/* ======== 🤑 Global's ======== */
+
+body {
+  display: flex;
+}
+
+main {
+  background: var(--body-bg-color);
+  flex: 1;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+dfn {
+  background: var(--green);
+}
+
+/* ======== Sidebar ======== */
+
+.sidebar {
+  width: 15.625rem;
+  height: 100vh;
+  background: var(--green);
+  padding: 1rem;
+
+  position: relative;
+
+  transition: all 0.25s;
+}
+
+/* ======== 🤑 Logo Content ======== */
+
+.logo-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6875rem;
+}
+
+.logo-content .toggle-menu {
+  margin-right: 0.875rem;
+}
+
+/* ======== 🤑 Search Box ======== */
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search img {
+  position: absolute;
+  left: 27px;
+  top: 88px;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.search input {
+  position: relative;
+  width: 95%;
+  border: none;
+  outline: none;
+  padding: 1rem 0.6rem;
+
+  background: var(--light-green);
+  border-radius: 0.75rem;
+
+  caret-color: var(--text-color);
+  margin-bottom: 1.25rem;
+  text-indent: 2rem;
+}
+
+.search input::placeholder {
+  position: relative;
+  color: var(--text-color);
+  padding-left: 0.2rem;
+  font-size: 0.9375;
+}
+
+/* ======== 🤑 List of Itens (dash, pets..) ======== */
+
+.itens ul {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.itens ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8125rem;
+
+  margin-bottom: 2.1875rem;
+
+  cursor: pointer;
+
+  position: relative;
+  transition: color 0.2s;
+}
+
+.itens ul li a {
+  color: var(--text-color);
+  position: relative;
+}
+
+/* BOTTOM HOVER EFFECT */
+
+.itens ul li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 0.1rem;
+
+  background: var(--text-color);
+
+  transition: width 0.4s;
+}
+
+.itens ul li a:hover::after {
+  width: 100%;
+}
+
+.itens ul li img {
+  transition: 0.3s;
+}
+
+.itens ul li img:hover {
+  transform: rotateZ(10deg);
+}
+
+.itens ul li img:nth-child(4):hover {
+  transform: rotateZ(50deg);
+}
+
+/* ======== 🤑 Person Info's (name, job..) ======== */
+
+.content-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--light-green);
+  font-size: 1rem;
+  color: var(--text-color);
+  width: 100%;
+  height: 5rem;
+  padding: 1rem;
+
+  transition: all 0.25s;
+}
+
+.person {
+  display: flex;
+  color: var(--text-color);
+}
+
+.person .text small {
+  display: block;
+}
+
+.content-box img {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  object-fit: cover;
+
+  border-radius: 0.75rem;
+  margin-right: 0.5625rem;
+}
+
+.content-box .log-out a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ======== 🤑 Shrink Class ======== */
+
+.sidebar.shrink {
+  width: 4.875rem;
+  transition: all 0.25s;
+}
+
+/* LOGO Shrink */
+
+.sidebar.shrink header .logo-content {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar.shrink header .logo-content .logo {
+  visibility: hidden;
+  opacity: 1;
+  display: none;
+}
+
+.sidebar.shrink .logo-content .toggle-menu {
+  margin: 0;
+}
+
+/* SEARCH Shrink */
+
+.sidebar.shrink .search img {
+  left: 27px;
+  top: 88px;
+}
+
+.sidebar.shrink .search input {
+  background: var(--light-grey);
+  width: 100%;
+  margin-bottom: 1.3rem;
+
+  transition: all 0.25s;
+}
+
+/* UL LI ITENS Shrink */
+
+.sidebar.shrink .itens a {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+
+  transition: all 0.25s;
+}
+
+.sidebar.shrink .itens {
+  display: flex;
+  justify-content: center;
+
+  transition: all 0.25s;
+}
+
+.sidebar.shrink .itens img {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  transition: all 0.25s;
+}
+
+.sidebar.shrink .content-box {
+  justify-content: center;
+  height: 4rem;
+
+  transition: all 0.25s;
+}
+
+.sidebar.shrink .content-box .person {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.25s;
+}
+
+/* ======== 🤑 Main Content ======== */
+
+main h2 {
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
