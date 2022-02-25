@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Manrope', sans-serif;
+}
+
+:root {
+  --background: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+body {
+  background: var(--background);
+}
+
+.container {
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--border);
+}
+
+header #logo,
+.menu {
+  padding: 2rem;
+  cursor: pointer;
+}
+
+#coffee {
+  color: var(--text-color);
+  text-align: center;
+
+  margin-top: 5.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#coffee h1 {
+  font-size: 1.875rem;
+  letter-spacing: 0.02em;
+}
+
+#coffee button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  margin-top: 5.5rem;
+  padding: 1rem 1.8rem;
+  color: #fff;
+  background: transparent;
+
+  border: 1px solid var(--button);
+  border-radius: 0.5rem;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Opens Sans', sans-serif;
+}
+
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background: var(--blue);
+}
+
+header {
+  text-align: center;
+  padding: 6.25rem 0 4rem 0;
+}
+
+header .text h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1.25rem;
+}
+
+header .text p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+main .cards {
+  display: flex;
+  flex-direction: column;
+
+  width: 24rem;
+  height: 29rem;
+
+  padding: 1.875rem;
+
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  border-radius: 0.8rem;
+
+  color: var(--gray);
+}
+
+.card .type {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  margin-bottom: 1.25rem;
+}
+
+.cards h3 {
+  color: #1e2338;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  margin-bottom: 0.8rem;
+}
+
+.cards h3 span {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 400;
+}
